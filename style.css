@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
 }
 body {
   background-color: #d6d1e8;
@@ -11,7 +12,6 @@ body {
   flex-direction: column;
 }
 header {
-  border: 1px red solid;
   background: white;
   width: 92%;
   height: 12vh;
@@ -20,9 +20,9 @@ header {
   align-items: center;
 }
 h3 {
-  background: white;
   margin-left: 3em;
   font-size: 1.6em;
+  cursor: pointer;
 }
 ul {
   background: white;
@@ -34,15 +34,165 @@ li {
   background: white;
   list-style: none;
 }
+a {
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000, #000000, transparent 7%)
+    no-repeat left bottom / 0 100%;
+  transition: background-size 1s;
+}
+a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover {
+  background-size: 100% 100%;
+}
 .headerIcons {
   background-color: white;
   margin-right: 4em;
   height: 100%;
   display: flex;
+  cursor: pointer;
 }
 img {
   margin: 1em;
   background-color: white;
   width: 20px;
   object-fit: contain;
+}
+main {
+  width: 92vw;
+  background-color: white;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  height: 80vh;
+}
+
+.leftCard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: 1 / 1 / 6 / 3;
+  background-image: url('https://www.pimkie.fr/dw/image/v2/AAYN_PRD/on/demandware.static/-/Sites-pimkie-master-catalog/default/dw219b75f5/images/902553_899A08_portrait_HD_1.JPG?sw=760&sh=938');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  cursor: pointer;
+}
+.topCard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: 1 / 3 / 4 / 6;
+  background-image: url('https://www.ozflip.com/I-Grande-107028-roller-quad-impala-forest.net.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 4vw;
+  cursor: pointer;
+}
+.litleCard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: 4 / 3 / 6 / 4;
+  background-image: url('https://data.glamood.com/imgprodotto/chuck-taylor-all-star-4-5cm-platform-high-top-sneakers-with-contrasting-laces_1153055_big.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.rigthCard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: 4 / 4 / 6 / 6;
+  background-image: url('https://performancevelo.com/23264-superlarge_default/peugeot-lc01-d7.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 4vw;
+  cursor: pointer;
+}
+h2 {
+  font-size: 1.2em;
+  padding: 1em;
+}
+h4 {
+  margin-top: 8vh;
+  text-align: center;
+  font-size: 24px;
+}
+article {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottomCard {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 420px;
+  height: 320px;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+.card1 {
+  background-image: url('assets/card/card1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card2 {
+  background-image: url('assets/card/card2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card3 {
+  background-image: url('assets/card/card3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fav {
+  background-color: transparent;
+}
+p {
+  margin-top: 2em;
+  text-align: justify;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.card4 {
+  background-image: url('assets/card/card4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card5 {
+  background-image: url('assets/card/card5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card6 {
+  background-image: url('assets/card/card6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 92vw;
+  height: 32vh;
+  background-color: #6d6d6d70;
+}
+.footertitle {
+  text-align: center;
+
+  margin-left: 2vw;
+  width: 20%;
 }
